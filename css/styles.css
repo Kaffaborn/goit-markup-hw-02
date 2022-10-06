@@ -4,6 +4,7 @@
     --title-text-color:#212121;
     --accent-color:#2196F3;
     --secondary-bg-color:#2F303A;
+    --inactive-btn-color:#F5F4FA;
 }
 
 body {
@@ -15,8 +16,17 @@ color: var(--primary-text-color);
     list-style:none;
 }
 
+.btn{
+    cursor: pointer;
+    border: none;
+}
+
 .section .title {
     color: var(--title-text-color);
+}
+
+.section.title.hid {
+    display: none;
 }
 
 /* Header */
@@ -29,7 +39,8 @@ color: var(--accent-color);
     color: var(--title-text-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus{
+.site-nav .link:focus,
+.site-nav .link.current {
 color: var(--accent-color);
 }
 /* Contacts */
@@ -46,6 +57,10 @@ color: var(--accent-color);
 }
 .hero .title{
     color: #ffffff;
+}
+.hero .btn{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 /* Features */
 .features .title{
@@ -76,4 +91,26 @@ color: var(--accent-color);
 }
 .address .link{
     color: rgba(255, 255, 255, 0.6);
+}
+.address .link:focus,
+.address .link:hover,
+.address .street:focus,
+.address .street:hover{
+    color: var(--accent-color);
+}
+/* Portfolio */
+
+.filter .btn{
+    background-color:var(--inactive-btn-color);
+    color:var(--title-text-color);
+}
+
+.filter .btn:hover,
+.filter .btn:focus{
+    background-color:var(--accent-color);
+    color:var(--primary-white-color);
+}
+
+.projects .title{
+    color: var(--title-text-color);
 }
