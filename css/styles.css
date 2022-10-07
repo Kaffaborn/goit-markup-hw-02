@@ -56,12 +56,17 @@ color: var(--accent-color);
     background-color: var(--secondary-bg-color);
 }
 .hero .title{
-    color: #ffffff;
+    color: var(--primary-white-color);
 }
 .hero .btn{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
+.hero .btn:hover,
+.hero .btn:focus{
+    background-color: #188CE8;
+}
+
 /* Features */
 .features .title{
     color: var(--title-text-color);
