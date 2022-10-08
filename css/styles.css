@@ -18,10 +18,6 @@ body {
    letter-spacing: 0.03em;
 }
 
-a {
-    text-decoration:none;
-}
-
 .list{
     list-style:none;
 }
@@ -48,6 +44,7 @@ a {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .logo .first-part{
@@ -60,6 +57,7 @@ a {
 /* Site navigation */
 .site-nav .link{
     color: var(--title-text-color);
+    text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -78,6 +76,7 @@ a {
 /* Contacts */
 .contact .link{
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 .contact .link:hover,
 .contact .link:focus{
@@ -156,9 +155,11 @@ a {
 
 .address .street{
     color: var(--primary-white-color);
+    text-decoration: none;
 }
 .address .link{
     color:var(--footer-link-color);
+    text-decoration: none;
 }
 .address .link:focus,
 .address .link:hover,
